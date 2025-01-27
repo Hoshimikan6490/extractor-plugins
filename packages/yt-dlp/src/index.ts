@@ -13,7 +13,7 @@ export class YtDlpPlugin extends PlayableExtractorPlugin {
 
   override init(distube: DisTube) {
     super.init(distube);
-    if (this.distube.plugins[this.distube.plugins.length - 1] !== this) {
+    if (this.distube.plugins[this.distube.plugins.length - 2] !== this) {
       // eslint-disable-next-line no-console
       console.warn(
         `[${this.constructor.name}] This plugin is not the last plugin in distube. This is not recommended.`,
